@@ -57,25 +57,26 @@ The Unreal Engine (UE) environment is provided **separately** via a ZIP cloud li
 This repository contains benchmark artifacts for the San Francisco digital-twin scenario.
 
 ### Folder layout
+```text
 san_fran/
 └─ scenario1/
-├─ all_nearest_points.json
-├─ bidirection_dictionary.jsonl
-├─ nav_pairs_paths.jsonl
-├─ nav_pairs_paths.jsonl.ckpt
-├─ task_initialization_data.json
-├─ UE_map_encode/
-│ ├─ areaid_mapping.csv
-│ ├─ areaid_mapping.json
-│ ├─ outside_cubes.jsonl
-│ ├─ outside_points.jsonl
-│ ├─ zone1_cubes.jsonl
-│ ├─ zone1_points.jsonl
-│ ├─ ...
-│ ├─ zone10_cubes.jsonl
-│ └─ zone10_points.jsonl
-└─ UE_points_and_cubes/ (optional / raw exports)
-
+   ├─ all_nearest_points.json
+   ├─ bidirection_dictionary.jsonl
+   ├─ nav_pairs_paths.jsonl
+   ├─ nav_pairs_paths.jsonl.ckpt
+   ├─ task_initialization_data.json
+   ├─ UE_map_encode/
+   │  ├─ areaid_mapping.csv
+   │  ├─ areaid_mapping.json
+   │  ├─ outside_cubes.jsonl
+   │  ├─ outside_points.jsonl
+   │  ├─ zone1_cubes.jsonl
+   │  ├─ zone1_points.jsonl
+   │  ├─ ...
+   │  ├─ zone10_cubes.jsonl
+   │  └─ zone10_points.jsonl
+   └─ UE_points_and_cubes/  (optional / raw exports)
+```
 
 ### What each file is for
 
