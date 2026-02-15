@@ -31,7 +31,7 @@ This repo includes:
 ---
 
 ## UE Environment (Distributed via ZIP Cloud Link)
-The Unreal Engine (UE) environment is provided **separately** via a ZIP cloud link (网盘链接) due to asset size/licensing constraints.
+The Unreal Engine (UE) environment is provided **separately** via a ZIP cloud link (https://pan.baidu.com/s/1QvN_AGWM0D9hF3-Kshla9A?pwd=6666) due to asset size/licensing constraints.
 
 **Tested platform**
 - Windows 10
@@ -57,3 +57,55 @@ The Unreal Engine (UE) environment is provided **separately** via a ZIP cloud li
 This repository contains benchmark artifacts for the San Francisco digital-twin scenario.
 
 ### Folder layout
+san_fran/
+└─ scenario1/
+├─ all_nearest_points.json
+├─ bidirection_dictionary.jsonl
+├─ nav_pairs_paths.jsonl
+├─ nav_pairs_paths.jsonl.ckpt
+├─ task_initialization_data.json
+├─ UE_map_encode/
+│ ├─ areaid_mapping.csv
+│ ├─ areaid_mapping.json
+│ ├─ outside_cubes.jsonl
+│ ├─ outside_points.jsonl
+│ ├─ zone1_cubes.jsonl
+│ ├─ zone1_points.jsonl
+│ ├─ ...
+│ ├─ zone10_cubes.jsonl
+│ └─ zone10_points.jsonl
+└─ UE_points_and_cubes/ (optional / raw exports)
+
+
+### What each file is for
+
+**Navigation graph & shortest-path execution**
+- `bidirection_dictionary.jsonl`  
+  Bidirectional connectivity / adjacency information for the collision-free 3D navigation graph.
+
+- `nav_pairs_paths.jsonl`  
+  Precomputed shortest paths between navigation node pairs for fast, reproducible shortest-path execution.
+
+- `nav_pairs_paths.jsonl.ckpt`  
+  Checkpoint marker for path generation (used when resuming precomputation).
+
+- `all_nearest_points.json`  
+  Nearest-point lookup table (e.g., mapping arbitrary coordinates or service points to navigation graph nodes).
+
+**Periodic task offloading initialization**
+- `task_initialization_data.json`  
+  Scenario initialization for cluster heads (CHs) and periodic task streams, including deadlines and task parameters used by the benchmark.
+
+**UE map encoding (zone/obstacle primitives)**
+- `UE_map_encode/zone*_points.jsonl` and `UE_map_encode/zone*_cubes.jsonl`  
+  Zone-specific navigation points and obstacle cubes used to build the collision-free navigation graph.
+
+- `UE_map_encode/outside_points.jsonl` and `UE_map_encode/outside_cubes.jsonl`  
+  Points/cubes outside the main zones (boundary and completeness).
+
+- `UE_map_encode/areaid_mapping.csv|json`  
+  Mapping between UE areas/zones and encoded region IDs.
+
+---
+
+
