@@ -1,6 +1,6 @@
+# 3D-UAV-MEC: Benchmarking MARL for UAV-Assisted MEC
 
-
-[![Scenario](SanFrancisco_scenario.png)](SanFrancisco_scenario.png)
+[![Scenario](SanFrancisco_github.png)](SanFrancisco_github.png)
 
 **3D-UAV-MEC** is a high-fidelity benchmark for **Multi-Agent Reinforcement Learning (MARL)** in UAV-assisted Mobile Edge Computing. It simulates periodic task offloading in a realistic 3D urban environment (San Francisco) under strict collision-avoidance and deadline constraints.
 
