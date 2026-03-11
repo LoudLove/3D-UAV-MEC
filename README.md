@@ -1,5 +1,3 @@
-# 复制以下内容到你的 README.md 文件中
-
 # 3D-UAV-MEC: Benchmarking MARL for UAV-Assisted MEC
 
 [![Scenario](SanFrancisco_scenario.png)](SanFrancisco_scenario.png)
