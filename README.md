@@ -6,7 +6,7 @@
 
 ---
 
-## ### Key Features
+## Key Features
 * **Realistic 3D Navigation**: Enforces collision-free movement using a navigation graph derived from a San Francisco digital twin.
 * **Practical Constraints**: Implements shortest-path execution and periodic task offloading with explicit deadlines/hyperperiods.
 * **Comprehensive Metrics**: Standardized evaluation of **success rate**, **end-to-end latency**, and **energy consumption**.
@@ -14,7 +14,7 @@
 
 ---
 
-## ### System Requirements & Resources
+## System Requirements & Resources
 
 **Software Environment:**
 * **OS**: Windows 10
@@ -28,7 +28,7 @@ Due to size constraints, the **Unreal Engine Digital Twin** is hosted separately
 
 ---
 
-## ### Project Structure (`san_fran/`)
+## Project Structure (`san_fran/`)
 The `san_fran/scenario1/` directory contains precomputed artifacts for reproducibility:
 * **Navigation**: `bidirection_dictionary.jsonl` (graph adjacency), `nav_pairs_paths.jsonl` (shortest paths).
 * **Map Data**: `UE_map_encode/` (zone-specific navigation points and obstacles).
@@ -36,7 +36,7 @@ The `san_fran/scenario1/` directory contains precomputed artifacts for reproduci
 
 ---
 
-## ### Getting Started: Execution Order
+## Getting Started: Execution Order
 
 Follow these steps to prepare the environment and run the benchmark:
 
@@ -56,7 +56,7 @@ Follow these steps to prepare the environment and run the benchmark:
 
 ---
 
-## ### Framework Integration
+## Framework Integration
 The provided environment files are designed as **reference implementations**. You may need to wrap them depending on your MARL library (e.g., **BenchMARL**, **MAPPO**, or **PettingZoo**).
 
 **Customization Points:**
@@ -66,5 +66,5 @@ The provided environment files are designed as **reference implementations**. Yo
 
 ---
 
-## ### License
+## License
 Code and benchmark artifacts are provided under the repository license. Please ensure compliance with third-party licenses for any UE assets used.
